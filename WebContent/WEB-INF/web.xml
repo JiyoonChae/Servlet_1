@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+   <!-- tomcat한테 이주소로가서 객체를 만들어달라고 알려주는 것! -->
+  	<servlet>
+  		<servlet-name>board</servlet-name>
+  		<servlet-class>com.jy.s1.BoardController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>board</servlet-name>
+  		<url-pattern>*.board</url-pattern>
+  	</servlet-mapping>
 </web-app>
